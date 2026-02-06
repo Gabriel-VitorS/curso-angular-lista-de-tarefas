@@ -50,13 +50,13 @@
 
   &.btn-primary-circle {
     &::after {
-      content: url("/icons/add.svg");
+      content: url("../../../public/icons/add.svg");
     }
   }
 
   &.btn-danger-circle { 
     &::after {
-      content: url("/icons/delete.svg");
+      content: url("../../../public/icons/delete.svg");
     }
   }
 }
