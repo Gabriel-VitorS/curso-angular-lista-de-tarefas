@@ -1,0 +1,29 @@
+<header [class.has-items]="inputListItems.length">
+  @if(inputListItems.length){
+    <h1>Minha Lista</h1>
+  }
+  <div [class.container]="inputListItems.length">
+    <label
+      [class.remove-margin-bottom]="!inputListItems.length"
+      class="input-label-text" for="inputValue">
+
+      <input 
+        type="text"
+        placeholder="Adicione um novo item"
+        id="inputValue"
+        autofocus
+        
+        (keyup.enter)="focusAndAddItem(inputText.value)"
+        #inputText
+      >
+  
+      <button 
+      class="btn btn-primary-circle" 
+      title="Adicionar um novo item"
+      (click)="focusAndAddItem(inputText.value)"
+      >  
+      
+      </button>
+    </label>
+  </div>
+</header>
